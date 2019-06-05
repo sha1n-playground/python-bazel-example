@@ -1,0 +1,20 @@
+package(default_visibility = ["//visibility:public"])
+
+py_library(
+    name="nested",
+    srcs=[
+        ":srcs"
+    ]
+)
+
+py_test(
+    name="nested_test",
+    srcs=["nested_test.py"],
+    deps=[":nested"],
+)
+
+
+filegroup(
+    name="srcs",
+    srcs=glob(["*.py"]),
+)
