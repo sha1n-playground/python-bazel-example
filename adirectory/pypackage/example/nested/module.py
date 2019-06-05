@@ -1,3 +1,3 @@
 
-def nested():
+def get():
     return "nested"

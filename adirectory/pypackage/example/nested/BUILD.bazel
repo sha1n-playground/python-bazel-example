@@ -4,12 +4,13 @@ py_library(
     name="nested",
     srcs=[
         ":srcs"
-    ]
+    ],
+    imports=["../../.."], # this is insane..
 )
 
 py_test(
-    name="nested_test",
-    srcs=["nested_test.py"],
+    name="module_test",
+    srcs=["module_test.py"],
     deps=[":nested"],
 )
 

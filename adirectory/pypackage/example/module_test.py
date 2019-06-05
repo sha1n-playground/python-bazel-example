@@ -1,5 +1,5 @@
 import unittest
-from project.example.example import what
+from pypackage.example.module import what
 
 
 class ExampleTest(unittest.TestCase):
