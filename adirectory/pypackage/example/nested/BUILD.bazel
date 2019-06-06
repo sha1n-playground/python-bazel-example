@@ -12,6 +12,7 @@ py_test(
     name="module_test",
     srcs=["module_test.py"],
     deps=[":nested"],
+    python_version = "PY3",
 )
 
 
