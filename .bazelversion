@@ -1,0 +1,3 @@
+0.26.0
+# ^ that tells bazelisk which bazel version is required for this workspace
+# More about bazelisk here: https://github.com/bazelbuild/bazelisk
